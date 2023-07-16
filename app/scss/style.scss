@@ -96,5 +96,107 @@
   margin: auto auto;
 }
 
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 24px;
+  color: #868686;
+  padding-bottom: 76px;
+  border-bottom: #dae4e9 1px solid;
+
+  &-title {
+    @extend%dmsans-700;
+    font-size: 16px;
+    color: #1f2044;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  & a {
+    display: block;
+    color: #868686;
+  }
+
+  &-contact {
+    width: 190px;
+  }
+
+  &-services {
+    line-height: 32px;
+  }
+
+  &-account {
+    line-height: 32px;
+  }
+
+  &-phone {
+    margin-bottom: 8px;
+  }
+
+  &-adress {
+    margin-bottom: 8px;
+  }
+
+  &-text {
+    max-width: 270px;
+    margin-bottom: 36px;
+  }
+
+}
+
+.footer__logo {
+  margin-bottom: 18px;
+}
+
+.footer__top-form-input {
+  background-color: $bg;
+  border: none;
+  @extend%dmsans-400;
+  padding: 15px 0 15px 15px;
+
+  &::placeholder {
+    color: #234969;
+    font-size: 12px;
+  }
+}
+
+.footer__top-form-btn {
+  @extend%dmsans-400;
+  font-size: 14px;
+  color: #fff;
+  background-color: #a3bbc8;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 18px;
+  color: #7b7b7b;
+  margin: 35px 0;
+  &-link{
+    color: #7b7b7b;
+  }
+
+  &-nav {
+    display: flex;
+
+    &-item {
+      padding: 0 15px;
+
+      &+.footer__bottom-nav-item {
+        border-left: 1px solid #7b7b7b;
+      }
+    }
+  }
+}
+.footer__bottom-nav-item-contact{
+  padding-right: 0;
+}
+
 
 @import 'media';
