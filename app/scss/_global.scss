@@ -17,3 +17,11 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.title{
+  text-align: center;
+  @extend%dmsans-700;
+  text-align: center;
+  font-size: 36px;
+  color: rgb(25, 25, 25);
+  line-height: 1.2;
+}
