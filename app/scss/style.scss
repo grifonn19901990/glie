@@ -636,7 +636,7 @@
 
   &-title {
     font-size: 36px;
-    @extend %rubik-400;
+    @extend %rubik-300;
   }
 }
 
@@ -696,6 +696,35 @@
     padding: 20px 156px;
   }
 }
+
+.terms__content {
+  @extend %rubik-400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #243f4d;
+  max-width: 1170px;
+  margin: 120px auto 0;
+}
+
+.terms__title {
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.terms__list-item {
+  margin-bottom: 20px;
+  list-style-type: decimal-leading-zero;
+  
+}
+.terms__list{
+  margin-left: 30px;
+}
+.terms__list,
+.terms__text {
+  margin-bottom: 60px;
+}
+
 
 
 @import 'media';
