@@ -1,6 +1,15 @@
 $title: #436372;
 $bg: #fef7f0;
 
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
 %rubik-300 {
   font-family: "Rubik-Light", sans-serif;
   font-weight: 300;

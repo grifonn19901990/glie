@@ -48,3 +48,27 @@ body {
     color: #9a9ea2;
   }
 }
+
+.pagination {
+  padding: 90px 0 20px;
+  margin: 0 auto;
+  width: 270px;
+
+  &__link {
+    padding: 14px 18px;
+    border: 1px solid #a3bbc8;
+    @extend %rubik-400;
+    font-size: 16px;
+    color: #243f4d;
+    margin: 0 5px;
+
+    &:hover{
+      background-color: #a3bbc8;
+      color: #fff;
+    }
+    &--active {
+      background-color: #a3bbc8;
+      color: #fff;
+    }
+  }
+}
