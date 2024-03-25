@@ -552,7 +552,7 @@
   margin: 0 auto;
 }
 
-.blog {
+.miniblog {
   background-image: url(../images/insights-bg.png);
   background-size: 100% 442px;
   background-repeat: no-repeat;
@@ -560,12 +560,12 @@
   margin-bottom: 80px;
 }
 
-.blog__wrapper {
+.miniblog__wrapper {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-.blog__top {
+.miniblog__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -582,7 +582,7 @@
   }
 }
 
-.blog__content {
+.miniblog__content {
   display: flex;
   justify-content: space-between;
 
@@ -1401,14 +1401,16 @@
     text-align: center;
     height: 380px;
     margin: 0 20px;
-    &-wrapper{
-      
+
+    &-wrapper {
+
       height: 380px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
     }
+
     img {
       display: inline;
     }
@@ -1448,25 +1450,193 @@
 .relprod__content-item:hover .relprod__item-menu {
   opacity: 1;
 }
-.slick-arrow{
- background-color: transparent;
- padding: 15px 10px;
- border: 2px solid #edf1f4;
- border-radius: 5px;
- cursor: pointer;
- position: absolute;
- top: -120px;
- &:hover{
-  border-color: #a3bbc8;
- }
+
+.slick-arrow {
+  background-color: transparent;
+  padding: 15px 10px;
+  border: 2px solid #edf1f4;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: -120px;
+
+  &:hover {
+    border-color: #a3bbc8;
+  }
 }
-.slick-next{
+
+.slick-next {
   right: 0;
 }
-.slick-prev{
+
+.slick-prev {
   right: 65px;
 }
 
+.blog {
+  padding: 120px 0 25px;
 
+  &__inner {
+    display: flex;
+  }
+
+  &__content {
+    max-width: 830px;
+    margin-right: 70px;
+  }
+
+  &__aside {
+    width: 270px;
+    color: #243f4d;
+  }
+
+  &__item {
+    margin-bottom: 50px;
+
+    &-wrapper {
+      position: relative;
+    }
+
+    &-title {
+      padding: 40px 0 32px;
+
+      a {
+        color: #333;
+        @extend %rubik-400;
+        font-size: 36px;
+      }
+    }
+
+    &-txt {
+      @extend %rubik-400;
+      color: #243f4d;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 32px;
+    }
+
+    &-btn {
+      border: 1px solid #a3bbc8;
+      color: #a3bbc8;
+      background-color: transparent;
+      width: 180px;
+      height: 60px;
+      cursor: pointer;
+
+      img {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  &__info-box {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 276px;
+    height: 70px;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &-date {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 11px;
+        height: 12px;
+        background-image: url(../images/icon/calendar-2.svg);
+        left: -16px;
+      }
+    }
+
+    &-auhtor {
+      position: relative;
+    }
+
+    &-auhtor::before {
+      content: '';
+      position: absolute;
+      width: 11px;
+      height: 10px;
+      background-image: url(../images/icon/user-2.svg);
+      left: -15px;
+    }
+  }
+
+  &__search {
+    margin-bottom: 60px;
+
+    &-form {
+      border: 2px solid #edf1f4;
+      display: flex;
+      border-radius: 5px;
+    }
+
+    &-input {
+      width: 220px;
+      border: none;
+      height: 40px;
+      padding: 5px;
+      background-color: transparent;
+      display: block;
+    }
+
+    &-btn {
+      display: block;
+      cursor: pointer;
+      width: 46px;
+      height: 40px;
+      border: none;
+      background-color: #edf1f4;
+    }
+  }
+}
+
+.recent__post {
+  &-item {
+    margin-bottom: 20px;
+  }
+
+  &-img {
+    width: 71px;
+    height: 71px;
+    float: left;
+    margin-right: 20px;
+  }
+
+  &-txt {
+    a {
+      color: #333;
+      line-height: 20px;
+      font-size: 14px;
+    }
+
+    margin-bottom: 12px;
+  }
+
+  &-date {
+    color: #9a9a9a;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 110px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 11px;
+      height: 12px;
+      background-image: url(../images/icon/calendar-1.svg);
+      right: 168px;
+    }
+  }
+
+}
 
 @import 'media';
